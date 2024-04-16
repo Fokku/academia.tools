@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import * as React from "react";
@@ -95,7 +96,7 @@ export function DataTable<TData, TValue>({
                   .getCoreRowModel()
                   .rows.map((row) => row.getValue("Faculty"))
               )
-            ).map((faculty) => (
+            ).map((faculty: any) => (
               <SelectItem key={faculty} value={faculty}>
                 {faculty}
               </SelectItem>
@@ -147,7 +148,7 @@ export function DataTable<TData, TValue>({
                   className="h-44 text-center"
                 >
                   <div className="space-y-4">
-                    <p className="font-medium">Can't find your group?</p>
+                    <p className="font-medium">Can&apos;t find your group?</p>
                     <Link href="" target="_blank">
                       <Button className="mt-2" size={"sm"}>Add yours</Button>
                     </Link>
