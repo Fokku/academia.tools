@@ -68,7 +68,7 @@ export function DataTable<TData, TValue>({
     <div>
       <div className="flex items-center space-x-5 py-4">
         <Input
-          placeholder="NUS A1234"
+          placeholder="e.g. GEA1000 or Business Administration"
           //   value={"test"
           //     // (table
           //     //   .getColumn("TelegramGroupName")
@@ -149,7 +149,7 @@ export function DataTable<TData, TValue>({
                 >
                   <div className="space-y-4">
                     <p className="font-medium">Can&apos;t find your group?</p>
-                    <Link href="" target="_blank">
+                    <Link href="https://forms.gle/cMeTUuGXzRKBkqqz9" target="_blank">
                       <Button className="mt-2" size={"sm"}>Add yours</Button>
                     </Link>
                   </div>
