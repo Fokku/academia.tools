@@ -65,8 +65,8 @@ export function DataTable<TData, TValue>({
   });
 
   return (
-    <div>
-      <div className="flex items-center space-x-5 py-4">
+    <div className="flex flex-col">
+      <div className="flex flex-col md:flex-row md:items-center space-x-0 md:space-x-5 py-4">
         <Input
           placeholder="e.g. GEA1000 or Business Administration"
           //   value={"test"
@@ -79,7 +79,7 @@ export function DataTable<TData, TValue>({
               .getColumn("TelegramGroupName")
               ?.setFilterValue(event.target.value)
           }
-          className="max-w-sm"
+          className="md:max-w-sm"
         />
         <Select
           onValueChange={(event) =>
@@ -104,7 +104,7 @@ export function DataTable<TData, TValue>({
           </SelectContent>
         </Select>
       </div>
-      <div className="rounded-md border">
+      <div className="rounded-md border overflow-x-auto">
         <Table>
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
@@ -149,8 +149,13 @@ export function DataTable<TData, TValue>({
                 >
                   <div className="space-y-4">
                     <p className="font-medium">Can&apos;t find your group?</p>
-                    <Link href="https://forms.gle/cMeTUuGXzRKBkqqz9" target="_blank">
-                      <Button className="mt-2" size={"sm"}>Add yours</Button>
+                    <Link
+                      href="https://forms.gle/cMeTUuGXzRKBkqqz9"
+                      target="_blank"
+                    >
+                      <Button className="mt-2" size={"sm"}>
+                        Add yours
+                      </Button>
                     </Link>
                   </div>
                 </TableCell>
