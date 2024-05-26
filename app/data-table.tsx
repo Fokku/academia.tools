@@ -87,7 +87,7 @@ export function DataTable<TData, TValue>({
           }
         >
           <SelectTrigger className="w-[280]">
-            <SelectValue placeholder="Select a module" />
+            <SelectValue placeholder="Select a faculty" />
           </SelectTrigger>
           <SelectContent>
             {Array.from(
