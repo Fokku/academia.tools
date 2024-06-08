@@ -20,7 +20,7 @@ const Navbar = () => {
         <button className="sm:hidden mr-2" onClick={toggleMenu}>
           <Menu className="h-6 w-6" />
         </button>
-        <Link href="/" target="_blank">
+        <Link href="/">
           <div className="flex items-center space-x-1 cursor-pointer">
             <Image
               height={32}

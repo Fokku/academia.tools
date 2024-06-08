@@ -66,6 +66,7 @@ export function DataTable<TData, TValue>({
 
   return (
     <div className="flex flex-col">
+      <div className="text-xl font-semibold">Telegram Groups for AY2024/2025</div>
       <div className="flex flex-col md:flex-row md:items-center space-x-0 md:space-x-5 py-4">
         <Input
           placeholder="e.g. GEA1000 or Business Administration"
